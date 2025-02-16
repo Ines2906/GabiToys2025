@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>GabiToys</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Ines">
+        <meta name="description" content="Gabito Toys es una tienda de juguetes dedicada a llevar felicidad a los más pequeños">
+        <meta name="keywords" content="juguetes, diversion, niños, niñas, juegos">
+    </head>
+    <body>
+        <!-- Otros elementos de tu página -->
+        <nav>
+            <!-- Menú de navegación actualizado -->
+            <ul>
+                <li><a href="/Index.html">Inicio</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <!-- Sección de Contacto -->
+        <div id="contact" class="contact-section">
+            <h2>Contacto</h2>
+            <p>Correo Electrónico: contacto@gabitoys.com</p>
+            <p>Teléfono: +51 969 900 045</p>
+            <form action="/send_message" method="POST">
+                <label for="name">Nombre:</label><br>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Correo Electrónico:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <label for="message">Mensaje:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+
+        <!-- Otros elementos de tu página -->
+    </body>
+</html>

@@ -1,191 +1,91 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <!-- Título de la página -->
-        <title>GabiToys</title>
-        <!-- Metadatos del documento -->
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="author" content="Ines">
-        <meta name="description" content="Gabito Toys es una tienda de juguetes dedicada a llevar felicidad a los más pequeños">
-        <meta name="keywords" content="juguetes, diversion, niños, niñas, juegos">
-        <link rel="icon" href="dist/image/nuevo_logo-removebg-preview.png" type="image/png">
-        <!-- Estilos en línea -->
-        <style>
-            body {
-                font-family: 'Arial', sans-serif;
-                margin: 0;
-                padding: 0;
-                line-height: 1.6;
-            }
-            header {
-                background-color: hsl(300, 100%, 50%);
-                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-                padding: 10px 20px;
-            }
-            header img {
-                width: 70px;
-            }
-            header h1 {
-                font-size: 3rem;
-                color: white;
-            }
-            button a {
-                text-decoration: none;
-                color: white;
-            }
-            button {
-                background-color: red;
-                color: white;
-                padding: 10px 15px;
-                border: none;
-                border-radius: 5px;
-                font-size: 16px;
-                cursor: pointer;
-                transition: background-color 0.3s;
-            }
-            button:hover {
-                background-color: blue;
-            }
-            #section1 {
-                background-color: #FFD700;
-                text-align: center;
-                padding: 20px;
-            }
-            #section1 h1 {
-                font-size: 2.5rem;
-            }
-            .products-container {
-                display: flex;
-                justify-content: center;
-                flex-wrap: wrap;
-                gap: 20px;
-                padding: 20px;
-            }
-            .product-card {
-                background: #d0e6a5;
-                border-radius: 10px;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-                text-align: center;
-                padding: 20px;
-                width: 250px;
-                transition: transform 0.3s ease-in-out;
-            }
-            .product-card img {
-                max-width: 100%;
-                height: auto;
-                border-radius: 8px;
-            }
-            .product-card:hover {
-                transform: scale(1.05);
-            }
-            .product-card h3 {
-                font-size: 1.2em;
-                margin: 10px 0;
-            }
-            footer {
-                background-color: #FFD700;
-                padding: 15px 0;
-                text-align: center;
-            }
-            footer a {
-                text-decoration: none;
-                color: blue;
-            }
-        </style>
-    </head>
-    <body>
-        <!-- Cabecera de la página -->
-        <header>
-            <table width="100%">
-                <tbody>
+<head>
+    <title>GabiToys</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <table width="100%" style="background-color: #DDA0DD;">
+        <tr>
+            <td align="left" width="20%">
+                <a href="index.html">
+                    <img src="dist/image/nuevo_logo-removebg-preview.png" alt="Logo GabiToys" width="100">
+                </a>
+            </td>
+            <td align="center" width="60%">
+                <h1 style="color: white;">GabiToys</h1>
+            </td>
+            <td align="right" width="20%">
+                <table>
                     <tr>
-                        <!-- Logo y enlace a la página de inicio -->
-                        <td width="85">
-                            <a href="index.html">
-                                <img src="dist/image/nuevo_logo-removebg-preview.png">
-                            </a>
-                        </td>
-                        <!-- Título del sitio -->
                         <td>
-                            <h1>GabiToys</h1>
+                            <a href="page/Venta.html" style="padding: 10px; background-color: #FF6347; color: white; text-decoration: none; border-radius: 5px;">Venta</a>
                         </td>
-                        <!-- Navegación Principal -->
-                        <td align="right"></td>
-                        <td align="right">
-                            <table>
-                                <tbody>
-                                    <tr>
-                                        <td><button><a href="index.html">Inicio</a></button></td>
-                                        <td><button><a href="page/Venta.html">Venta</a></button></td>
-                                        <td><button><a href="page/Contacto.html">Contacto</a></button></td>
-                                    </tr>
-                                </tbody>
-                              </table>
+                        <td>
+                            <a href="page/Contacto.html" style="padding: 10px; background-color: #4682B4; color: white; text-decoration: none; border-radius: 5px;">Contacto</a>
                         </td>
                     </tr>
-                </tbody>
-            </table> 
-        </header>
-        <!-- Contenido principal del sitio web -->
-        <div align="center">
-            <!-- Banner de la página principal -->
-            <img src="dist/image/Banner dia del niño.png" alt="Banner GabiToys" width="100%" height="650">
-            <!-- Mensaje de Bienvenida -->
-            <div>
-                <h1 style="color: #857373;">Bienvenido a GabiToys</h1>
-                <p style="color: #0370c1; font-size: 1.2rem;">Sumérgete en la diversión y el aprendizaje con GabiToys</p>
-            </div>
-        </div>
-        <main>
-            <!-- Primera sección - Sobre Nosotros -->
-            <section id="section1">
-                <h1>Descubre un mundo de juegos y fantasía con nosotros</h1>
-                <img src="dist/image/nuevo_logo-removebg-preview.png">
-            </section>
-            <!-- Sección - Productos -->
-            <section id="section2">
-                <h2 style="text-align: center; font-size: 2.5rem; color: #333;">Nuestros Productos</h2>
-                <div class="products-container">
-                    <!-- Juguetes de Niño -->
-                    <div class="product-card">
-                        <h3>Juguetes de Niño</h3>
-                        <a href="page/JuguetesNino.html">
-                            <img src="dist/image/juguetes de niño - cabecera.jpg" alt="Juguetes de Niño">
-                        </a>
-                        <p>Amplia variedad de juguetes para niños de todas las edades.</p>
-                    </div>
-                    <!-- Juguetes de Niña -->
-                    <div class="product-card">
-                        <h3>Juguetes de Niña</h3>
-                        <a href="page/JuguetesNina.html">
-                            <img src="dist/image/juguetes de niña - cabecera.jpg" alt="Juguetes de Niña">
-                        </a>
-                        <p>Juguetes especiales diseñados para niñas.</p>
-                    </div>
-                    <!-- Juguetería Didáctica -->
-                    <div class="product-card">
-                        <h3>Juguetería Didáctica</h3>
-                        <a href="page/JugueteriaDidactica.html">
-                            <img src="dist/image/Juguetes didacticos - Gabito Toys.jpg" alt="Juguetería Didáctica">
-                        </a>
-                        <p>Juguetes educativos que promueven el aprendizaje y la creatividad.</p>
-                    </div>
-                    <!-- Aplicación de Juegos Infantiles Web -->
-                    <div class="product-card">
-                        <h3>Aplicación de Juegos Infantiles Web</h3>
-                        <a href="page/AplicacionJuegos.html">
-                            <img src="dist/image/Plataforma Interactiva.jpg" alt="Aplicación de Juegos Infantiles Web">
-                        </a>
-                        <p>Plataforma interactiva con juegos infantiles online.</p>
-                    </div>
-                </div>
-            </section>
-        </main>
-        <!-- Pie de página -->
-        <footer>
-            <p>© 2025 GabiToys. Todos los derechos reservados.</p>
-            <p><a href="page/TerminosYCondiciones.html" style="color: blue;">Términos y Condiciones</a></p>
-            <p><a href="mailto:contacto@gabitoys.com">Correo Electrónico: contacto@gabitoys.com</a></p>
-            <p><a href="tel:+51 969900045">Teléfono: +51 969 900 045</a></p>
-        </footer>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <!-- Banner -->
+    <table width="100%">
+        <tr>
+            <td>
+                <img src="dist/image/Banner dia del niño.png" alt="Flyer GabiToys" width="100%">
+            </td>
+        </tr>
+    </table>
+
+    <!-- Sección de Productos -->
+    <h2 style="text-align: center; font-family: Verdana; color: #333; font-size: 36px;">Nuestros Productos</h2>
+    <table width="100%" cellspacing="10">
+        <tr>
+            <td align="center" style="background-color: #E6E6FA; width: 25%; font-family: Georgia; color: #444;">
+                <h3>Juguetes de Niño</h3>
+                <a href="page/JuguetesNino.html">
+                    <img src="dist/image/juguetes de niño - cabecera.jpg" alt="Juguetes de Niño" width="150">
+                </a>
+                <p>Variedad de juguetes para niños de todas las edades.</p>
+            </td>
+            <td align="center" style="background-color: #E6E6FA; width: 25%; font-family: Georgia; color: #444;">
+                <h3>Juguetes de Niña</h3>
+                <a href="page/JuguetesNina.html">
+                    <img src="dist/image/juguetes de niña - cabecera.jpg" alt="Juguetes de Niña" width="150">
+                </a>
+                <p>Juguetes únicos diseñados para niñas.</p>
+            </td>
+            <td align="center" style="background-color: #E6E6FA; width: 25%; font-family: Georgia; color: #444;">
+                <h3>Juguetería Didáctica</h3>
+                <a href="page/JugueteriaDidactica.html">
+                    <img src="dist/image/Juguetes didacticos - Gabito Toys.jpg" alt="Juguetería Didáctica" width="150">
+                </a>
+                <p>Juguetes que promueven aprendizaje y creatividad.</p>
+            </td>
+            <td align="center" style="background-color: #E6E6FA; width: 25%; font-family: Georgia; color: #444;">
+                <h3>Aplicación de Juegos Infantiles Web</h3>
+                <a href="page/AplicacionJuegos.html">
+                    <img src="dist/image/Plataforma Interactiva.jpg" alt="Aplicación de Juegos Infantiles Web" width="150">
+                </a>
+                <p>Plataforma interactiva con juegos infantiles online.</p>
+            </td>
+        </tr>
+    </table>
+
+    <!-- Pie de Página -->
+    <table width="100%" style="background-color: #DDA0DD; text-align: center;">
+        <tr>
+            <td>
+                <p style="color: white; font-family: Courier New;">© 2025 GabiToys | Todos los derechos reservados</p>
+                <p><a href="page/TerminosYCondiciones.html" style="color: white;">Términos y Condiciones</a></p>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>

@@ -11,22 +11,23 @@
             <table width="100%">
                 <tr>
                     <td align="left">
-                        <button onclick="window.location.href='../index.html'" style="padding: 10px; background-color: #4682b4; color: white; border: none; border-radius: 5px; cursor: pointer;">Regresar al Inicio</button>
+                        <button onclick="window.location.href='../index.html'">Regresar al Inicio</button>
                     </td>
                 </tr>
             </table>
         </header>
 
         <!-- Título del carrito -->
-        <h1 style="text-align: center; color: #333;">Carrito de Compras</h1>
+        <h1 style="text-align: center;">Carrito de Compras</h1>
 
-        <!-- Sección del carrito -->
-        <table border="1" width="70%" align="center" bgcolor="#f0f8ff" style="border-collapse: collapse;">
-            <thead style="background-color: #4682b4; color: white;">
+        <!-- Tabla del carrito -->
+        <table border="1" width="70%" align="center">
+            <thead>
                 <tr>
                     <th>Producto</th>
                     <th>Precio</th>
-                    <th>Acción</th>
+                    <th>Cantidad</th>
+                    <th>Subtotal</th>
                 </tr>
             </thead>
             <tbody>
@@ -34,24 +35,63 @@
                     <td>Juguete Aventura</td>
                     <td>S/45.00</td>
                     <td align="center">
-                        <button onclick="alert('Producto añadido al carrito: Juguete Aventura')" style="padding: 5px;">Añadir</button>
+                        <select name="cantidad1">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
                     </td>
+                    <td>S/45.00</td>
                 </tr>
                 <tr>
                     <td>Juguete Educativo</td>
                     <td>S/60.00</td>
                     <td align="center">
-                        <button onclick="alert('Producto añadido al carrito: Juguete Educativo')" style="padding: 5px;">Añadir</button>
+                        <select name="cantidad2">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
                     </td>
+                    <td>S/60.00</td>
                 </tr>
                 <tr>
                     <td>Juguete Creativo</td>
                     <td>S/30.00</td>
                     <td align="center">
-                        <button onclick="alert('Producto añadido al carrito: Juguete Creativo')" style="padding: 5px;">Añadir</button>
+                        <select name="cantidad3">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
                     </td>
+                    <td>S/30.00</td>
                 </tr>
             </tbody>
         </table>
+
+        <!-- Suma ficticia -->
+        <div align="center" style="margin-right: 15%;">
+            <p><b>Total:</b> S/135.00</p>
+        </div>
+
+        <!-- Botón para proceder al pago -->
+        <div align="center">
+            <button>Proceder al Pago</button>
+        </div>
+
+        <!-- Opciones de pago -->
+        <div align="center" style="margin-top: 20px;">
+            <h3>Medios de Pago</h3>
+            <p>Selecciona tu método de pago preferido:</p>
+            <ul>
+                <li>Tarjeta de Crédito o Débito</li>
+                <li>Transferencia Bancaria</li>
+                <li>Pago contra Entrega</li>
+            </ul>
+        </div>
     </body>
 </html>

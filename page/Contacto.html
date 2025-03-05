@@ -5,30 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GabiToys - Contacto</title>
 </head>
-<body style="font-family: Arial, sans-serif; background-color: #f9f9f9; margin: 0; padding: 0;">
+<body>
     <!-- Menú de navegación -->
-    <nav style="background-color: #4682b4; padding: 10px; text-align: center;">
-        <a href="../index.html" style="color: white; text-decoration: none; margin: 0 15px; font-weight: bold;">Inicio</a>
-        <a href="#contact" style="color: white; text-decoration: none; margin: 0 15px; font-weight: bold;">Contacto</a>
+    <nav>
+        <table width="100%">
+            <tr>
+                <td align="center"><a href="../index.html">Inicio</a></td>
+            </tr>
+        </table>
     </nav>
 
     <!-- Sección de Contacto -->
-    <section id="contact" style="max-width: 600px; margin: 30px auto; background: white; padding: 20px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); border-radius: 8px;">
-        <h2 style="text-align: center; color: #333;">Contáctanos</h2>
-        <p style="text-align: center; color: #666;">Teléfono: +51 123-456-789</p>
-        <p style="text-align: center; color: #666;">Correo: contacto@gabitoys.com</p>
-        <form action="../enviar.php" method="POST">
-            <label for="nombre" style="display: block; margin-top: 10px; font-weight: bold; color: #333;">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required style="width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ddd; border-radius: 5px;">
-
-            <label for="correo" style="display: block; margin-top: 10px; font-weight: bold; color: #333;">Correo:</label>
-            <input type="email" id="correo" name="correo" required style="width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ddd; border-radius: 5px;">
-
-            <label for="mensaje" style="display: block; margin-top: 10px; font-weight: bold; color: #333;">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" required style="width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ddd; border-radius: 5px;"></textarea>
-
-            <button type="submit" style="display: block; width: 100%; padding: 10px; margin-top: 20px; background-color: #4682b4; color: white; border: none; border-radius: 5px; cursor: pointer;">Enviar</button>
-        </form>
+    <section id="contact">
+        <table align="center" border="0" width="60%">
+            <tr>
+                <td colspan="2" align="center">
+                    <h2>Contáctanos</h2>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">Teléfono: +51 123-456-789</td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">Correo: contacto@gabitoys.com</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <form action="../enviar.php" method="POST">
+                        <table width="100%">
+                            <tr>
+                                <td><label for="nombre">Nombre:</label></td>
+                                <td><input type="text" id="nombre" name="nombre" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="correo">Correo:</label></td>
+                                <td><input type="email" id="correo" name="correo" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="mensaje">Mensaje:</label></td>
+                                <td><textarea id="mensaje" name="mensaje" required></textarea></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" align="center">
+                                    <button type="submit">Enviar</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </td>
+            </tr>
+        </table>
     </section>
 </body>
 </html>

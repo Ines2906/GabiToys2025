@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <!-- Titulo de la pagina -->
+        <!-- Título de la página -->
         <title>Venta - GabiToys</title>
         <!-- Metadatos del documento -->
         <meta charset="UTF-8">
@@ -10,39 +10,20 @@
         <meta name="description" content="Gabito Toys es una tienda de juguetes dedicada a llevar felicidad a los más pequeños.">
         <meta name="keywords" content="juguetes, diversion, niños, niñas, juegos">
         <!-- Enlace al archivo CSS principal -->
-        <link rel="stylesheet" type="text/css" href="dist/CSS/mystilo.css">
+        <link rel="stylesheet" type="text/css" href="../dist/CSS/mystilo.css">
     </head>
     <body>
         <header>
-            <!-- Tabla de la cabecera del sitio -->
-            <table width="100%">
-                <tbody>
-                    <tr>
-                        <!-- Logo de Gabitoys con enlace al index o pagina de inicio -->
-                        <td width="85">
-                            <a href="../index.html">
-                                <img width="70" src="../dist/image/nuevo logo.jpg" alt="Logo GabiToys">
-                            </a>
-                        </td>
-                        <!-- Titulo del sitio -->
-                        <td>
-                            <h1><font face="Arial" size="10">GabiToys</font></h1>
-                        </td>
-                        <!-- Navegación principal -->
-                        <td align="right"></td>
-                        <td align="right">
-                            <table>
-                                <tbody>
-                                    <tr>
-                                        <td><button><a href="../index.html">Inicio</a></button></td>
-                                        <td><button><a href="#contact">Contacto</a></button></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </td>
-                    </tr>
-                </tbody>
-            </table> 
+            <!-- Encabezado con logo y navegación -->
+            <div class="header-container">
+                <a href="../index.html" class="logo">
+                    <img width="70" src="../dist/image/nuevo_logo.jpg" alt="Logo GabiToys">
+                </a>
+                <nav>
+                    <a href="../index.html" class="nav-btn">Inicio</a>
+                    <a href="../page/Contacto.html" class="nav-btn">Contacto</a>
+                </nav>
+            </div>
         </header>
         <main>
             <!-- Sección de productos -->
@@ -68,17 +49,34 @@
             <section id="carrito">
                 <h2>Carrito de Compras</h2>
                 <div class="carrito-item">
-                    <p><strong>Juguete Aventura</strong>: S/45.00</p>
+                    <p><strong>Juguete Aventura:</strong> S/45.00</p>
                 </div>
                 <div class="carrito-item">
-                    <p><strong>Juguete Educativo</strong>: S/60.00</p>
+                    <p><strong>Juguete Educativo:</strong> S/60.00</p>
                 </div>
                 <p><strong>Total:</strong> S/105.00</p>
                 <button>Proceder al Pago</button>
             </section>
+            <!-- Sección de contacto -->
+            <section id="contact">
+                <h2>Contáctanos</h2>
+                <p>Teléfono: +51 123-456-789</p>
+                <p>Correo: contacto@gabitoys.com</p>
+                <form action="../enviar.php" method="POST">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    <label for="correo">Correo:</label>
+                    <input type="email" id="correo" name="correo" required>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
         </main>
         <footer>
-            <p>&copy; 2025 GabiToys</p>
+            <div class="footer-container">
+                <p>&copy; 2025 GabiToys. Todos los derechos reservados.</p>
+            </div>
         </footer>
     </body>
 </html>

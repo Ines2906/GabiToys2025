@@ -2,66 +2,39 @@
 <html>
     <head>
         <!-- Título de la página -->
-        <title>Venta - GabiToys</title>
+        <title>GabiToys - Contacto</title>
         <!-- Metadatos del documento -->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Ines">
-        <meta name="description" content="Gabito Toys es una tienda de juguetes dedicada a llevar felicidad a los más pequeños.">
+        <meta name="description" content="Gabito Toys es una tienda de juguetes dedicada a llevar felicidad a los más pequeños">
         <meta name="keywords" content="juguetes, diversion, niños, niñas, juegos">
         <!-- Enlace al archivo CSS principal -->
         <link rel="stylesheet" type="text/css" href="../dist/CSS/mystilo.css">
     </head>
     <body>
-        <header>
-            <!-- Encabezado con logo y navegación -->
-            <div class="header-container">
-                <a href="../index.html" class="logo">
-                    <img width="70" src="../dist/image/nuevo logo.jpg" alt="Logo GabiToys">
-                </a>
-                <nav>
-                    <a href="../index.html" class="nav-btn">Inicio</a>
-                    <a href="../page/Contacto.html" class="nav-btn">Contacto</a>
-                </nav>
-            </div>
-        </header>
-        <main>
-            <!-- Sección de productos -->
-            <section id="productos">
-                <h2>Productos Disponibles</h2>
-                <div class="producto">
-                    <p><strong>Producto:</strong> Juguete Aventura</p>
-                    <p>Precio: S/45.00</p>
-                    <button>Añadir al Carrito</button>
-                </div>
-                <div class="producto">
-                    <p><strong>Producto:</strong> Juguete Educativo</p>
-                    <p>Precio: S/60.00</p>
-                    <button>Añadir al Carrito</button>
-                </div>
-                <div class="producto">
-                    <p><strong>Producto:</strong> Juguete Creativo</p>
-                    <p>Precio: S/30.00</p>
-                    <button>Añadir al Carrito</button>
-                </div>
-            </section>
-            <!-- Sección del carrito -->
-            <section id="carrito">
-                <h2>Carrito de Compras</h2>
-                <div class="carrito-item">
-                    <p><strong>Juguete Aventura:</strong> S/45.00</p>
-                </div>
-                <div class="carrito-item">
-                    <p><strong>Juguete Educativo:</strong> S/60.00</p>
-                </div>
-                <p><strong>Total:</strong> S/105.00</p>
-                <button>Proceder al Pago</button>
-            </section>
-        </main>
-        <footer>
-            <div class="footer-container">
-                <p>&copy; 2025 GabiToys. Todos los derechos reservados.</p>
-            </div>
-        </footer>
+        <!-- Menú de navegación -->
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <!-- Sección de Contacto -->
+        <section id="contact">
+            <h2>Contáctanos</h2>
+            <p>Teléfono: +51 123-456-789</p>
+            <p>Correo: contacto@gabitoys.com</p>
+            <form>
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre" required><br>
+                <label for="correo">Correo:</label><br>
+                <input type="email" id="correo" name="correo" required><br>
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br>
+                <button type="button">Enviar</button>
+            </form>
+        </section>
     </body>
 </html>

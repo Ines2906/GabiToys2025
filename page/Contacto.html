@@ -2,50 +2,42 @@
 <html>
     <head>
         <!-- Titulo de la pagina -->
-        <title>GabiToys</title>
+        <title>GabiToys - Contacto</title>
         <!-- Metadatos del documento -->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Ines">
         <meta name="description" content="Gabito Toys es una tienda de juguetes dedicada a llevar felicidad a los más pequeños">
         <meta name="keywords" content="juguetes, diversion, niños, niñas, juegos">
+        <!-- Enlace al archivo CSS principal -->
+        <link rel="stylesheet" type="text/css" href="/dist/CSS/mystilo.css">
     </head>
     <body>
-        <!-- Otros elementos de la página -->
         <!-- Menú de navegación -->
         <nav>
-            <!-- Lista de elementos del menu -->
-           <ul>
-            <!-- Enlace al inicio -->
+            <ul>
+                <!-- Enlace al inicio -->
                 <li><a href="/index.html">Inicio</a></li>
-            <!-- Enlace a la seecion de contacto-->
+                <!-- Enlace a la sección de contacto -->
                 <li><a href="#contact">Contacto</a></li>
             </ul>
         </nav>
 
         <!-- Sección de Contacto -->
         <div id="contact" class="contact-section">
-            <!-- Titulo de la seccion de contacto -->
             <h2>Contacto</h2>
-            <!-- Informacion de contacto -->
             <p>Correo Electrónico: contacto@gabitoys.com</p>
             <p>Teléfono: +51 969 900 045</p>
-        <!-- Formulario de contacto -->    
+            <!-- Formulario de contacto -->
             <form action="/send_message" method="POST">
-                <!-- Campo de nombre -->
                 <label for="name">Nombre:</label><br>
                 <input type="text" id="name" name="name" required><br>
                 <label for="email">Correo Electrónico:</label><br>
-                <!-- Campo para el correo -->
                 <input type="email" id="email" name="email" required><br>
                 <label for="message">Mensaje:</label><br>
-                <!-- Campo para el mensaje -->
                 <textarea id="message" name="message" rows="4" required></textarea><br>
-                <!-- Boton para enviar el formulario -->
                 <input type="submit" value="Enviar">
             </form>
         </div>
-
-        <!-- Otros elementos de la página -->
     </body>
 </html>

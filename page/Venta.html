@@ -2,13 +2,15 @@
 <html>
     <head>
         <!-- Titulo de la pagina -->
-        <title>Carrito de Compras - GabiToys</title>
+        <title>Venta - GabiToys</title>
         <!-- Metadatos del documento -->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Ines">
-        <meta name="description" content="Gabito Toys es una tienda de juguetes dedicada a llevar felicidad a los más pequeños">
+        <meta name="description" content="Gabito Toys es una tienda de juguetes dedicada a llevar felicidad a los más pequeños.">
         <meta name="keywords" content="juguetes, diversion, niños, niñas, juegos">
+        <!-- Enlace al archivo CSS principal -->
+        <link rel="stylesheet" type="text/css" href="/dist/CSS/mystilo.css">
     </head>
     <body>
         <header>
@@ -26,7 +28,7 @@
                         <td>
                             <h1><font face="Arial" size="10">GabiToys</font></h1>
                         </td>
-                        <!-- Navegacion principal-->
+                        <!-- Navegación principal -->
                         <td align="right"></td>
                         <td align="right">
                             <table>
@@ -36,31 +38,47 @@
                                         <td><button><a href="#contact">Contacto</a></button></td>
                                     </tr>
                                 </tbody>
-                              </table>
+                            </table>
                         </td>
                     </tr>
                 </tbody>
             </table> 
         </header>
-        <main> <!-- Contenedor principal -->
-            <section id="carrito">
-                <!-- Titulo de la seccion del carrito de compras -->
-                <h2>Carrito de Compras</h2>
-                <!-- Descripcion de la seccion del carrito de compras -->
-                <p>Aquí puedes ver los productos que has agregado al carrito.</p>
-                <!-- Aquí va el código para listar los productos en el carrito -->
-                <div>
-                    <!-- Ejemplo de producto en el carrito -->
-                    <div>
-                        <p><strong>Producto 1:</strong> Juguete de Niño</p>
-                        <p><strong>Precio:</strong> S/50.00</p>
-                        <button onclick="alert('El carrito se vaciará al recargar la página o navegar a otra sección.');">Eliminar</button>
-                    </div>
-                    <!-- Agrega más productos según sea necesario -->
+        <main>
+            <!-- Sección de productos -->
+            <section id="productos">
+                <h2>Productos Disponibles</h2>
+                <div class="producto">
+                    <p><strong>Producto:</strong> Juguete Aventura</p>
+                    <p>Precio: S/45.00</p>
+                    <button>Añadir al Carrito</button>
                 </div>
-                <!-- Boton para proceder all pago -->
+                <div class="producto">
+                    <p><strong>Producto:</strong> Juguete Educativo</p>
+                    <p>Precio: S/60.00</p>
+                    <button>Añadir al Carrito</button>
+                </div>
+                <div class="producto">
+                    <p><strong>Producto:</strong> Juguete Creativo</p>
+                    <p>Precio: S/30.00</p>
+                    <button>Añadir al Carrito</button>
+                </div>
+            </section>
+            <!-- Sección del carrito -->
+            <section id="carrito">
+                <h2>Carrito de Compras</h2>
+                <div class="carrito-item">
+                    <p><strong>Juguete Aventura</strong>: S/45.00</p>
+                </div>
+                <div class="carrito-item">
+                    <p><strong>Juguete Educativo</strong>: S/60.00</p>
+                </div>
+                <p><strong>Total:</strong> S/105.00</p>
                 <button>Proceder al Pago</button>
             </section>
         </main>
+        <footer>
+            <p>&copy; 2025 GabiToys</p>
+        </footer>
     </body>
 </html>

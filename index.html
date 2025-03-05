@@ -10,6 +10,7 @@
         <meta name="description" content="Gabito Toys es una tienda de juguetes dedicada a llevar felicidad a los más pequeños">
         <meta name="keywords" content="juguetes, diversion, niños, niñas, juegos">
         <link rel="icon" href="dist/image/nuevo_logo-removebg-preview.png" type="image/png">
+        <link rel="stylesheet" type="text/css" href="/dist/CSS/mystilo.css">
     </head>
     <body>
         <!-- Cabecera de la pagina -->
@@ -34,7 +35,7 @@
                                 <tbody>
                                     <tr>
                                         <td><button><a href="index.html">Inicio</a></button></td>
-                                        <td><button><a href="page/Venta.html">Carrito de Compras</a></button></td>
+                                        <td><button><a href="page/Venta.html">Venta</a></button></td>
                                         <td><button><a href="page/Contacto.html">Contacto</a></button></td>
                                     </tr>
                                 </tbody>
@@ -47,7 +48,7 @@
         <!-- Contenido principal del sitio web -->
         <div align="center">
             <!-- Banner de la pagina principal -->
-            <img src="dist/image/Banner dia del niño.png" alt="Banner GabiToys" width="100%" height="550">
+            <img src="dist/image/Banner dia del niño.png" alt="Banner GabiToys" width="100%" height="650">
             <!-- Mensaje de Bienvenida -->
             <div>
                 <h1><font face="Arial" size="10" color="#857373">Bienvenido a GabiToys</font></h1>
@@ -75,49 +76,48 @@
                 </table>
             </section>
             <!-- Sección - Productos -->
-            <section id="section2">
-                <h2 align="center"><font face="Calibri" size="10">Nuestros Productos</font></h2>
-                <table width="100%">
-                    <tbody>
-                        <tr>
-                            <!-- Juguetes de niño -->
-                            <td align="center" valign="top" width="50%">
-                                <h3><font face="Arial">Juguetes de Niño</font></h3>
-                                <a href="page/JuguetesNino.html">
-                                    <img src="dist/image/juguetes de niño - cabecera.jpg" alt="Juguetes de Niño" width="200">
-                                </a>
-                                <p><font face="Verdana">Amplia variedad de juguetes para niños de todas las edades.</font></p>
-                            </td>
-                            <!-- Juguetes de niña -->
-                            <td align="center" valign="top" width="50%">
-                                <h3><font face="Arial">Juguetes de Niña</font></h3>
-                                <a href="page/JuguetesNina.html">
-                                    <img src="dist/image/juguetes de niña - cabecera.jpg" alt="Juguetes de Niña" width="200">
-                                </a>
-                                <p><font face="Verdana">Juguetes especiales diseñados para niñas.</font></p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <!-- Jugueteria Didactica -->
-                            <td align="center" valign="top" width="50%">
-                                <h3><font face="Arial">Juguetería Didáctica</font></h3>
-                                <a href="page/JugueteriaDidactica.html">
-                                    <img src="dist/image/Juguetes didacticos - Gabito Toys.jpg" alt="Juguetería Didáctica" width="200">
-                                </a>
-                                <p><font face="Verdana">Juguetes educativos que promueven el aprendizaje y la creatividad.</font></p>
-                            </td>
-                            <!-- Aplicacion de juegos infantiles -->
-                            <td align="center" valign="top" width="50%">
-                                <h3><font face="Arial">Aplicación de Juegos Infantiles Web</font></h3>
-                                <a href="page/AplicacionJuegos.html">
-                                    <img src="dist/image/Plataforma Interactiva.jpg" alt="Aplicación de Juegos Infantiles Web" width="200">
-                                </a>
-                                <p><font face="Verdana">Plataforma interactiva con juegos infantiles online.</font></p>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
+            <!-- Sección - Productos -->
+<section id="section2">
+    <h2 class="section-title">Nuestros Productos</h2>
+    <div class="products-container">
+        <!-- Juguetes de Niño -->
+        <div class="product-card">
+            <h3>Juguetes de Niño</h3>
+            <a href="page/JuguetesNino.html">
+                <img src="dist/image/juguetes de niño - cabecera.jpg" alt="Juguetes de Niño">
+            </a>
+            <p>Amplia variedad de juguetes para niños de todas las edades.</p>
+        </div>
+
+        <!-- Juguetes de Niña -->
+        <div class="product-card">
+            <h3>Juguetes de Niña</h3>
+            <a href="page/JuguetesNina.html">
+                <img src="dist/image/juguetes de niña - cabecera.jpg" alt="Juguetes de Niña">
+            </a>
+            <p>Juguetes especiales diseñados para niñas.</p>
+        </div>
+
+        <!-- Juguetería Didáctica -->
+        <div class="product-card">
+            <h3>Juguetería Didáctica</h3>
+            <a href="page/JugueteriaDidactica.html">
+                <img src="dist/image/Juguetes didacticos - Gabito Toys.jpg" alt="Juguetería Didáctica">
+            </a>
+            <p>Juguetes educativos que promueven el aprendizaje y la creatividad.</p>
+        </div>
+
+        <!-- Aplicación de Juegos Infantiles Web -->
+        <div class="product-card">
+            <h3>Aplicación de Juegos Infantiles Web</h3>
+            <a href="page/AplicacionJuegos.html">
+                <img src="dist/image/Plataforma Interactiva.jpg" alt="Aplicación de Juegos Infantiles Web">
+            </a>
+            <p>Plataforma interactiva con juegos infantiles online.</p>
+        </div>
+    </div>
+</section>
+
         </main>
         <!-- Aquí empieza el pie de página -->
         <footer>

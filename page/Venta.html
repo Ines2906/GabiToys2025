@@ -1,40 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
     <head>
-        <!-- Título de la página -->
-        <title>GabiToys - Contacto</title>
-        <!-- Metadatos del documento -->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="author" content="Ines">
-        <meta name="description" content="Gabito Toys es una tienda de juguetes dedicada a llevar felicidad a los más pequeños">
-        <meta name="keywords" content="juguetes, diversion, niños, niñas, juegos">
-        <!-- Enlace al archivo CSS principal -->
-        <link rel="stylesheet" type="text/css" href="../dist/CSS/mystilo.css">
+        <title>Carrito de Compras</title>
     </head>
     <body>
-        <!-- Menú de navegación -->
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="#contact">Contacto</a></li>
-            </ul>
-        </nav>
+        <!-- Botón para regresar al índice -->
+        <header>
+            <table width="100%">
+                <tr>
+                    <td align="left">
+                        <button onclick="window.location.href='../index.html'" style="padding: 10px; background-color: #4682b4; color: white; border: none; border-radius: 5px; cursor: pointer;">Regresar al Inicio</button>
+                    </td>
+                </tr>
+            </table>
+        </header>
 
-        <!-- Sección de Contacto -->
-        <section id="contact">
-            <h2>Contáctanos</h2>
-            <p>Teléfono: +51 123-456-789</p>
-            <p>Correo: contacto@gabitoys.com</p>
-            <form>
-                <label for="nombre">Nombre:</label><br>
-                <input type="text" id="nombre" name="nombre" required><br>
-                <label for="correo">Correo:</label><br>
-                <input type="email" id="correo" name="correo" required><br>
-                <label for="mensaje">Mensaje:</label><br>
-                <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br>
-                <button type="button">Enviar</button>
-            </form>
-        </section>
+        <!-- Título del carrito -->
+        <h1 style="text-align: center; color: #333;">Carrito de Compras</h1>
+
+        <!-- Sección del carrito -->
+        <table border="1" width="70%" align="center" bgcolor="#f0f8ff" style="border-collapse: collapse;">
+            <thead style="background-color: #4682b4; color: white;">
+                <tr>
+                    <th>Producto</th>
+                    <th>Precio</th>
+                    <th>Acción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Juguete Aventura</td>
+                    <td>S/45.00</td>
+                    <td align="center">
+                        <button onclick="alert('Producto añadido al carrito: Juguete Aventura')" style="padding: 5px;">Añadir</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Juguete Educativo</td>
+                    <td>S/60.00</td>
+                    <td align="center">
+                        <button onclick="alert('Producto añadido al carrito: Juguete Educativo')" style="padding: 5px;">Añadir</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Juguete Creativo</td>
+                    <td>S/30.00</td>
+                    <td align="center">
+                        <button onclick="alert('Producto añadido al carrito: Juguete Creativo')" style="padding: 5px;">Añadir</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </body>
 </html>

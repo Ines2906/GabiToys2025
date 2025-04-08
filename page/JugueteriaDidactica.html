@@ -1,80 +1,138 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <!-- Titulo de la pagina -->
-        <title>Juguetería Didáctica - Gabito Toys</title>
-        <!-- Metadatos del documento -->
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="author" content="Ines">
-        <meta name="description" content="Amplia variedad de juguetes didácticos para todas las edades">
-        <meta name="keywords" content="juguetes, didácticos, educación, diversión">
-    </head>
-    <body>
-        <!-- Cabecera de la pagina con fondo de color -->
-        <header style="background-color: #d1ff92;">
-            <h1 align="center"><font face="Arial" size="8">Juguetería Didáctica - Línea Aprende</font></h1>
-        </header>
-        <main>
-            <!-- Tabla para organizar los productos en filas y columnas -->
-            <table width="100%" border="0" cellspacing="10" cellpadding="10">
-                <tr>
-                    <!-- Producto 1 -->
-                    <td align="center">
-                        <h2><font face="Arial">Bloques de Construcción Educativos</font></h2>
-                        <img src="../dist/image/bloquesdeconstruccioneducativos.jpg" alt="Bloques de Construcción Educativos" width="200">
-                        <p align="justify"><font face="Verdana">Estimula la creatividad y la lógica con estos bloques de construcción educativos. Incluye piezas de varios tamaños y formas para construir estructuras complejas mientras se aprende sobre formas y equilibrio.</font><br>
-                        <strong>Precio:</strong> S/. 90.00</p>
-                        <button>Agregar al Carrito</button>
-                    </td>
-                    <!-- Producto 2 -->
-                    <td align="center">
-                        <h2><font face="Arial">Puzzle del Alfabeto</font></h2>
-                        <img src="../dist/image/Puzzledelalfabeto.jpg" alt="Puzzle del Alfabeto" width="200">
-                        <p align="justify"><font face="Verdana">Este colorido puzzle del alfabeto ayuda a los niños a aprender las letras de manera divertida. Cada pieza del rompecabezas encaja en su lugar correcto, ayudando a desarrollar habilidades motoras finas y el reconocimiento de letras.</font><br>
-                        <strong>Precio:</strong> S/. 70.00</p>
-                        <button>Agregar al Carrito</button>
-                    </td>
-                    <!-- Producto 3 -->
-                    <td align="center">
-                        <h2><font face="Arial">Juego de Matemáticas Montessori</font></h2>
-                        <img src="../dist/image/Juego de Matematicas Montessori.jpg" alt="Juego de Matemáticas Montessori" width="200">
-                        <p align="justify"><font face="Verdana">Basado en los principios Montessori, este juego de matemáticas es perfecto para enseñar conceptos básicos de aritmética. Incluye números y símbolos magnéticos para facilitar el aprendizaje interactivo y práctico.</font><br>
-                        <strong>Precio:</strong> S/. 85.00</p>
-                        <button>Agregar al Carrito</button>
-                    </td>
-                </tr>
-                <tr>
-                    <!-- Producto 4 -->
-                    <td align="center">
-                        <h2><font face="Arial">Kit de Ciencia para Niños</font></h2>
-                        <img src="../dist/image/Kitdeciencia.jpg" alt="Kit de Ciencia para Niños" width="200">
-                        <p align="justify"><font face="Verdana">Explora el mundo de la ciencia con este emocionante kit de experimentos. Incluye materiales y guías para realizar diversos experimentos seguros y educativos en casa.</font><br>
-                        <strong>Precio:</strong> S/. 120.00</p>
-                        <button>Agregar al Carrito</button>
-                    </td>
-                    <!-- Producto 5 -->
-                    <td align="center">
-                        <h2><font face="Arial">Juego de Anatomía Humana</font></h2>
-                        <img src="../dist/image/juego de anatomia.jpg" alt="Juego de Anatomía Humana" width="200">
-                        <p align="justify"><font face="Verdana">Descubre el cuerpo humano con este detallado juego de anatomía. Incluye modelos desmontables y tarjetas educativas para enseñar sobre los diferentes sistemas del cuerpo humano de manera interactiva.</font><br>
-                        <strong>Precio:</strong> S/. 110.00</p>
-                        <button>Agregar al Carrito</button>
-                    </td>
-                    <!-- Producto 6 -->
-                    <td align="center">
-                        <h2><font face="Arial">Juego de Herramientas de Madera</font></h2>
-                        <img src="../dist/image/kit de herramientas.jpg" alt="Juego de Herramientas de Madera" width="200">
-                        <p align="justify"><font face="Verdana">Este juego de herramientas de madera es ideal para los pequeños constructores. Incluye un martillo, destornillador, tuercas y tornillos de madera, todo diseñado para enseñar habilidades básicas de construcción y fomentar el juego imaginativo.</font><br>
-                        <strong>Precio:</strong> S/. 60.00</p>
-                        <button>Agregar al Carrito</button>
-                    </td>
-                </tr>
-            </table>
-            <!-- Boton para regresar a la pagina de inicio -->
-            <div align="center">
-                <button onclick="window.location.href='../index.html'">Regresar al Inicio</button>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juguetería Didáctica - Gabito Toys</title>
+    <meta name="author" content="Inés">
+    <meta name="description" content="Amplia variedad de juguetes para niños de todas las edades">
+    <meta name="keywords" content="juguetes, niños, diversión">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #FFD700, #87CEEB, #FFB6C1); /* Colores infantiles brillantes */
+            color: #333;
+        }
+        header {
+            background: linear-gradient(90deg, #FF7F50, #FFD700);
+            text-align: center;
+            padding: 20px;
+            color: white;
+        }
+        header h1 {
+            font-size: 3rem;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+        }
+        .card {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border: none;
+            border-radius: 10px;
+        }
+        footer {
+            background: linear-gradient(90deg, #FFD700, #FF7F50);
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabecera -->
+    <header>
+        <h1>Juguetería Didáctica - Línea Aprende</h1>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="container my-5">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- Producto 1 -->
+            <div class="col">
+                <div class="card h-100 text-center">
+                    <img src="../dist/image/bloquesdeconstruccioneducativos.jpg" class="card-img-top" alt="Bloques de construcción">
+                    <div class="card-body">
+                        <h5 class="card-title">Bloques de Construcción Educativos</h5>
+                        <p class="card-text">Estimula la creatividad con bloques de construcción. Perfectos para aprender formas y equilibrio.</p>
+                        <p><strong>Precio:</strong> S/. 90.00</p>
+                        <button class="btn btn-primary">Agregar al Carrito</button>
+                    </div>
+                </div>
             </div>
-        </main>
-    </body>
+            <!-- Producto 2 -->
+            <div class="col">
+                <div class="card h-100 text-center">
+                    <img src="../dist/image/Puzzledelalfabeto.jpg" class="card-img-top" alt="Puzzle del Alfabeto">
+                    <div class="card-body">
+                        <h5 class="card-title">Puzzle del Alfabeto</h5>
+                        <p class="card-text">Aprende las letras con este divertido puzzle. Ideal para habilidades motoras finas.</p>
+                        <p><strong>Precio:</strong> S/. 70.00</p>
+                        <button class="btn btn-primary">Agregar al Carrito</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Producto 3 -->
+            <div class="col">
+                <div class="card h-100 text-center">
+                    <img src="../dist/image/Juego de Matematicas Montessori.jpg" class="card-img-top" alt="Juego de Matemáticas Montessori">
+                    <div class="card-body">
+                        <h5 class="card-title">Juego de Matemáticas Montessori</h5>
+                        <p class="card-text">Enseña conceptos básicos de aritmética con este juego interactivo.</p>
+                        <p><strong>Precio:</strong> S/. 85.00</p>
+                        <button class="btn btn-primary">Agregar al Carrito</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Producto 4 -->
+            <div class="col">
+                <div class="card h-100 text-center">
+                    <img src="../dist/image/Kitdeciencia.jpg" class="card-img-top" alt="Kit de Ciencia para Niños">
+                    <div class="card-body">
+                        <h5 class="card-title">Kit de Ciencia para Niños</h5>
+                        <p class="card-text">Descubre el mundo de la ciencia con experimentos seguros y educativos.</p>
+                        <p><strong>Precio:</strong> S/. 120.00</p>
+                        <button class="btn btn-primary">Agregar al Carrito</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Producto 5 -->
+            <div class="col">
+                <div class="card h-100 text-center">
+                    <img src="../dist/image/juego de anatomia.jpg" class="card-img-top" alt="Juego de Anatomía Humana">
+                    <div class="card-body">
+                        <h5 class="card-title">Juego de Anatomía Humana</h5>
+                        <p class="card-text">Incluye modelos desmontables para enseñar sobre los sistemas del cuerpo.</p>
+                        <p><strong>Precio:</strong> S/. 110.00</p>
+                        <button class="btn btn-primary">Agregar al Carrito</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Producto 6 -->
+            <div class="col">
+                <div class="card h-100 text-center">
+                    <img src="../dist/image/kit de herramientas.jpg" class="card-img-top" alt="Juego de Herramientas de Madera">
+                    <div class="card-body">
+                        <h5 class="card-title">Juego de Herramientas de Madera</h5>
+                        <p class="card-text">Ideal para los pequeños constructores, incluye herramientas de madera.</p>
+                        <p><strong>Precio:</strong> S/. 60.00</p>
+                        <button class="btn btn-primary">Agregar al Carrito</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Botón para regresar al inicio -->
+        <div class="text-center mt-5">
+            <a href="../index.html" class="btn btn-secondary">Regresar al Inicio</a>
+        </div>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2025 GabiToys. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>

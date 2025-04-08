@@ -1,80 +1,140 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <!-- Titulo de la pagina -->
-        <title>Juguetes de Niña - Gabito Toys</title>
-        <!-- Metadatos del documento -->
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="author" content="Ines">
-        <meta name="description" content="Amplia variedad de juguetes para niñas de todas las edades">
-        <meta name="keywords" content="juguetes, niñas, diversión">
-    </head>
-    <body>
-        <!-- Cabecera de la pagina con fondo de color -->
-        <header style="background-color: #ff92e1;">
-            <h1 align="center"><font face="Arial" size="8">Juguetes de Niña - Línea Alahya</font></h1>
-        </header>
-        <main>
-            <!-- Tabla para organizar los productos en filas y columnas -->
-            <table width="100%" border="0" cellspacing="10" cellpadding="10">
-                <tr>
-                    <!-- Producto 1 -->
-                    <td align="center">
-                        <h2><font face="Arial">Muñeca Barbie Dreamtopia Sirena</font></h2>
-                        <img src="../dist/image/barbiesirena.jpg" alt="Muñeca Barbie Dreamtopia Sirena" width="200">
-                        <p align="justify"><font face="Verdana">Sumérgete en un mundo de fantasía con la muñeca Barbie Dreamtopia Sirena. Esta hermosa sirena está lista para nadar en un mar de aventuras con su cola brillante y su cabello de colores.</font><br>
-                        <strong>Precio:</strong> S/. 75.00</p>
-                        <button>Agregar al Carrito</button>
-                    </td>
-                    <!-- Producto 2 -->
-                    <td align="center">
-                        <h2><font face="Arial">Casa de Muñeca Barbie</font></h2>
-                        <img src="../dist/image/casadebarbie.jpg" alt="Casa de Muñecas con Muebles" width="200">
-                        <p align="justify"><font face="Verdana">Esta encantadora casa de muñecas viene completamente amueblada y lista para proporcionar horas de juego creativo. Incluye detalles realistas y accesorios adorables para una experiencia mágica.</font><br>
-                        <strong>Precio:</strong> S/. 250.00</p>
-                        <button>Agregar al Carrito</button>
-                    </td>
-                    <!-- Producto 3 -->
-                    <td align="center">
-                        <h2><font face="Arial">Set de Cocina para Niñas</font></h2>
-                        <img src="../dist/image/set de cocina.jpg" alt="Set de Cocina para Niñas" width="200">
-                        <p align="justify"><font face="Verdana">Inspira a las pequeñas chefs con este set de cocina completo. Incluye una variedad de utensilios y electrodomésticos de juguete que fomentan el juego imaginativo y la creatividad en la cocina.</font><br>
-                        <strong>Precio:</strong> S/. 80.00</p>
-                        <button>Agregar al Carrito</button>
-                    </td>
-                </tr>
-                <tr>
-                    <!-- Producto 4 -->
-                    <td align="center">
-                        <h2><font face="Arial">La Heladería Set</font></h2>
-                        <img src="../dist/image/la heladeria.jpg" alt="La Heladería" width="200">
-                        <p align="justify"><font face="Verdana">Inspira a las pequeñas chefs con La Heladería, un set de juguete completo para crear deliciosos helados de juguete. Incluye una variedad de utensilios, moldes y accesorios coloridos para hacer helados de diferentes formas y sabores. Perfecto para horas de diversión creativa y juego imaginativo.</font><br>
-                        <strong>Precio:</strong> S/. 80.00</p>
-                        <button>Agregar al Carrito</button>
-                    </td>
-                    <!-- Producto 5 -->
-                    <td align="center">
-                        <h2><font face="Arial">Set de tocador para niñas</font></h2>
-                        <img src="../dist/image/tocador.jpg" alt="Casa de Muñecas con Muebles" width="200">
-                        <p align="justify"><font face="Verdana">ste elegante set de tocador para niñas es perfecto para las pequeñas que adoran jugar a disfrazarse. Incluye un espejo seguro, cepillo, secador de pelo, y una selección de accesorios de belleza. Todo está diseñado con colores vibrantes y detalles encantadores, fomentando el juego imaginativo y la creatividad.</font><br>
-                        <strong>Precio:</strong> S/. 250.00</p>
-                        <button>Agregar al Carrito</button>
-                    </td>
-                    <!-- Producto 6 -->
-                    <td align="center">
-                        <h2><font face="Arial">Unicornio Mágico interactivo</font></h2>
-                        <img src="../dist/image/unicorrnio.jpg" alt="Set de Cocina para Niñas" width="200">
-                        <p align="justify"><font face="Verdana">Este encantador unicornio mágico interactivo está diseñado para deslumbrar a los niños con su comportamiento realista. Responde al tacto y a los sonidos, haciendo que sus ojos se iluminen y emita sonidos mágicos. Con una melena colorida y suave, y un cuerno que se ilumina, este unicornio es el compañero perfecto para aventuras llenas de fantasía y diversión.</font><br>
-                        <strong>Precio:</strong> S/. 80.00</p>
-                        <button>Agregar al Carrito</button>
-                    </td>
-                </tr>
-            </table>
-            <!-- Boton  para regresar a la pagina de inicio -->
-            <div align="center">
-                <button onclick="window.location.href='../index.html'">Regresar al Inicio</button>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juguetes de Niña - Gabito Toys</title>
+    <meta name="author" content="Inés">
+    <meta name="description" content="Amplia variedad de juguetes para niñas de todas las edades">
+    <meta name="keywords" content="juguetes, niñas, diversión">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #ffb6c1, #ffc0cb, #fadadd); /* Fondo rosado degradado */
+            color: #333;
+        }
+        header {
+            background: linear-gradient(90deg, #ff69b4, #ffb6c1, #ffadd2);
+            text-align: center;
+            padding: 20px;
+            color: white;
+        }
+        header h1 {
+            font-size: 2.8rem;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+        }
+        .card {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border: none;
+            border-radius: 10px;
+        }
+        .card-title {
+            color: #ff69b4;
+        }
+        footer {
+            background: linear-gradient(90deg, #ffb6c1, #ffc0cb);
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabecera -->
+    <header>
+        <h1>Juguetes de Niña - Línea Alahya</h1>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="container my-5">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- Producto 1 -->
+            <div class="col">
+                <div class="card h-100 text-center">
+                    <img src="../dist/image/barbiesirena.jpg" class="card-img-top" alt="Muñeca Barbie Dreamtopia Sirena">
+                    <div class="card-body">
+                        <h5 class="card-title">Muñeca Barbie Dreamtopia Sirena</h5>
+                        <p class="card-text">Sumérgete en un mundo de fantasía con esta hermosa sirena, lista para aventuras con su cola brillante y cabello de colores.</p>
+                        <p><strong>Precio:</strong> S/. 75.00</p>
+                        <button class="btn btn-primary">Agregar al Carrito</button>
+                    </div>
+                </div>
             </div>
-        </main>
-    </body>
+            <!-- Producto 2 -->
+            <div class="col">
+                <div class="card h-100 text-center">
+                    <img src="../dist/image/casadebarbie.jpg" class="card-img-top" alt="Casa de Muñeca Barbie">
+                    <div class="card-body">
+                        <h5 class="card-title">Casa de Muñeca Barbie</h5>
+                        <p class="card-text">Una encantadora casa completamente amueblada para proporcionar horas de juego creativo.</p>
+                        <p><strong>Precio:</strong> S/. 250.00</p>
+                        <button class="btn btn-primary">Agregar al Carrito</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Producto 3 -->
+            <div class="col">
+                <div class="card h-100 text-center">
+                    <img src="../dist/image/set de cocina.jpg" class="card-img-top" alt="Set de Cocina para Niñas">
+                    <div class="card-body">
+                        <h5 class="card-title">Set de Cocina para Niñas</h5>
+                        <p class="card-text">Inspira a las pequeñas chefs con este set que fomenta el juego imaginativo y la creatividad en la cocina.</p>
+                        <p><strong>Precio:</strong> S/. 80.00</p>
+                        <button class="btn btn-primary">Agregar al Carrito</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Producto 4 -->
+            <div class="col">
+                <div class="card h-100 text-center">
+                    <img src="../dist/image/la heladeria.jpg" class="card-img-top" alt="Set de Heladería">
+                    <div class="card-body">
+                        <h5 class="card-title">Set de Heladería</h5>
+                        <p class="card-text">Crea deliciosos helados con moldes y accesorios coloridos.</p>
+                        <p><strong>Precio:</strong> S/. 90.00</p>
+                        <button class="btn btn-primary">Agregar al Carrito</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Producto 5 -->
+            <div class="col">
+                <div class="card h-100 text-center">
+                    <img src="../dist/image/unicorrnio.jpg" class="card-img-top" alt="Unicornio Mágico Interactivo">
+                    <div class="card-body">
+                        <h5 class="card-title">Unicornio Mágico Interactivo</h5>
+                        <p class="card-text">Responde al tacto con sonidos mágicos y un cuerno brillante.</p>
+                        <p><strong>Precio:</strong> S/. 95.00</p>
+                        <button class="btn btn-primary">Agregar al Carrito</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Producto 6 -->
+            <div class="col">
+                <div class="card h-100 text-center">
+                    <img src="../dist/image/tocador.jpg" class="card-img-top" alt="Juego de Maquillaje para Niñas">
+                    <div class="card-body">
+                        <h5 class="card-title">Juego de Maquillaje para Niñas</h5>
+                        <p class="card-text">Perfecto para jugar e imaginar con accesorios seguros y coloridos.</p>
+                        <p><strong>Precio:</strong> S/. 110.00</p>
+                        <button class="btn btn-primary">Agregar al Carrito</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-5">
+            <a href="../index.html" class="btn btn-secondary">Regresar al Inicio</a>
+        </div>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2025 GabiToys. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
